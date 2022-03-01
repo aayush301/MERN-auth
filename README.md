@@ -1,6 +1,5 @@
 # MERN Full Authentication App
 A MERN application for handling all the authentication and authorization for a user.  
-[View Demo](https://mern-auth-aayush.herokuapp.com/)
 
 Note:
 - The frontend part of the project uses Vitejs as the front end build tool.
@@ -148,8 +147,6 @@ Note:
 </pre>
 
 
-
-
 ## npm scripts
 At root:
 - `npm run dev`: Starts both backend and frontend
@@ -169,7 +166,6 @@ Inside backend folder:
 
 ## Useful Links
 - This project
-  - Demo: https://mern-auth-aayush.herokuapp.com/
   - Github Repo: https://github.com/aayush301/MERN-auth
 
 - Official Docs
