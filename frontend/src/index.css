@@ -1,0 +1,231 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+
+/* ----------Header------------ */
+
+header {
+  width: 100%;
+  min-height: 100px;
+  background: #282c34;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 0 30px;
+}
+
+header a {
+  color: white;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+}
+
+header ul li {
+  display: inline-block;
+  padding: 10px 20px;
+  opacity: 0.7;
+}
+
+header ul li:hover {
+  opacity: 1;
+}
+
+
+
+/* ------ Login ---- */
+.login-page {
+  max-width: 500px;
+  margin: auto;
+  color: #444;
+  padding: 0 15px;
+}
+
+.login-page h2 {
+  text-transform: uppercase;
+  font-size: 2rem;
+  margin: 20px 0;
+  letter-spacing: 1.5px;
+}
+
+.login-page input {
+  width: 100%;
+  height: 45px;
+  margin: 10px 0;
+  border: 2px solid #777;
+  outline: none;
+  padding: 0 10px;
+}
+
+.login-page .row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap-reverse;
+  align-items: flex-start;
+}
+
+.login-page .row a {
+  color: crimson;
+}
+
+.login-page .row button {
+  width: 150px;
+  padding: 10px 0;
+  color: white;
+  background: black;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  margin-right: 10px;
+}
+
+.login-page p {
+  margin: 10px 0;
+}
+
+.login-page a {
+  font-weight: 600;
+}
+
+/* ------Alerts---- */
+.success-msg {
+  background-color: #099e36;
+  color: #fff9;
+  text-align: center;
+  padding: 10px 0;
+  letter-spacing: 1.3px;
+}
+
+.error-msg {
+  background-color: #d60a0a;
+  color: #fff9;
+  text-align: center;
+  padding: 10px 0;
+  letter-spacing: 1.3px;
+}
+
+
+/* ------Dropdown------ */
+.drop-nav {
+  position: relative;
+  padding: 10px 0;
+}
+
+.drop-nav a {
+  text-transform: capitalize;
+  overflow: hidden;
+}
+
+.drop-nav .dropdown {
+  position: absolute;
+  background: #282c34;
+  width: 100%;
+  width: calc(100% + 30px);
+  top: 50px;
+  display: none;
+}
+
+.drop-nav:hover .dropdown {
+  display: block;
+}
+
+
+/* ------ Forgot Password  ------- */
+.forgot-password {
+  color: #555;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 2rem;
+  margin: 50px 0;
+  letter-spacing: 1.3px;
+}
+
+.forgot-password h2, .forgot-password label {
+  font-size: 20px;
+}
+
+.forgot-password .row {
+  max-width: 500px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.forgot-password .row input {
+  width: 100%;
+  height: 45px;
+  border: 1px solid #ccc;
+  outline: none;
+  padding: 0 15px;
+  border-radius: 3px;
+  margin: 5px 0;
+}
+
+.forgot-password .row button {
+  background: #333;
+  color: white;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  letter-spacing: 1.3px;
+  border-radius: 3px;
+  margin-top: 15px;
+}
+
+
+/* -----Profile------ */
+.profile-page {
+  width: 60%;
+  padding: 0 10px;
+  margin: auto;
+}
+
+.profile-page h2 {
+  text-align: center;
+  font-size: 1.7rem;
+  text-transform: uppercase;
+  color: #333;
+  margin: 10px 0;
+}
+
+.profile-page label {
+  display: block;
+  margin-top: 5px;
+}
+
+.profile-page input {
+  width: 100%;
+  height: 40px;
+  margin: 5px 0;
+  border: none;
+  outline: none;
+  background: #fee;
+  padding: 0 5px;
+}
+
+.profile-page button {
+  background: #333;
+  color: white;
+  padding: 10px 25px;
+  text-transform: uppercase;
+  letter-spacing: 1.4px;
+  margin: 10px 0;
+}
