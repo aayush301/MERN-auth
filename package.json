@@ -1,0 +1,19 @@
+{
+  "name": "mern-auth",
+  "version": "1.0.0",
+  "description": "MERN auth app",
+  "scripts": {
+    "dev-server": "npm run dev --prefix backend",
+    "dev-client": "npm run dev --prefix frontend",
+    "dev": "concurrently \"npm run dev-server\" \"npm run dev-client\"",
+    "install-all": "npm install && npm install --prefix frontend && npm install --prefix backend",
+    "heroku-postbuild": "npm install --prefix frontend && npm run build --prefix frontend && npm install --prefix backend",
+    "start": "cd backend && node app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^7.0.0"
+  }
+}
