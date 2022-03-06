@@ -2,27 +2,9 @@ const User = require("../models/User");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const { sendActivationEmail, sendResetPasswordEmail } = require("../utils/email");
+const { createActivationToken, createAccessToken, createRefreshToken, } = require("../utils/token");
+const { validateEmail } = require("../utils/validation");
 const { CLIENT_BASE_URL, ACTIVATION_TOKEN_SECRET, ACCESS_TOKEN_SECRET, REFRESH_TOKEN_SECRET } = process.env;
-
-const validateEmail = (email) => {
-  return String(email)
-    .toLowerCase()
-    .match(
-      /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
-    );
-};
-
-const createActivationToken = (payload) => {
-  return jwt.sign(payload, ACTIVATION_TOKEN_SECRET, { expiresIn: "5m" });
-}
-
-const createAccessToken = (payload) => {
-  return jwt.sign(payload, ACCESS_TOKEN_SECRET, { expiresIn: "15m" });
-}
-
-const createRefreshToken = (payload) => {
-  return jwt.sign(payload, REFRESH_TOKEN_SECRET, { expiresIn: "7d" });
-}
 
 
 
